@@ -13,16 +13,20 @@ You should create one R script called run_analysis.R that does the following.
 
 Once you have made sure that your initial settings are in place you can run the code to generate the tidy data set by sourcing the run_analysis.R file
 
-```source("run_analysis.R")```
+```
+source("run_analysis.R")
+```
 
 ## Output file
 
 After you run the code a file called "UCI_HAR_tinydata.txt" will be created with the new tidy dataset in your working directory
 You can check that from R using:
 
-```dir()```
+```
+dir()
+```
 
 ## Dependencies
 
-run_analysis.R file will help you to install the dependencies automatically. It depends on ```dplyr```.
+run_analysis.R file will help you to install the dependencies automatically. It depends on **dplyr**.
 
