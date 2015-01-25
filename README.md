@@ -20,8 +20,7 @@ source("run_analysis.R")
 
 ## Output file
 
-After you run the code a file called "UCI_HAR_tinydata.txt" will be created with the new tidy dataset in your working directory
-You can check that from R using:
+After you run the code a file called "UCI_HAR_tinydata.txt" will be created with the new tidy dataset in your working directory. Check that from R using:
 
 ```
 dir()
