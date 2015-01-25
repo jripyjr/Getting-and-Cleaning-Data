@@ -57,15 +57,15 @@ Additional vectors obtained by averaging the signals in a signal window sample. 
 * tBodyGyroMean
 * tBodyGyroJerkMean
 
-Transformations
-1.	The original datasets were separated into three datasets (subject, activity, and measurements) for both training and test.
-2.	The subject, activity, and measurements were joined for training and test.
-3.	The training and test datasets were joined.
-4.	A subset of the resulting dataset is used to keep only the measurements on the mean and standard deviation for each measurement, so we have kept a new reduced dataset with this dimensions (10299 observations of 68 variables)
-5.	The labels for activities and variables are extracted and used so that they are more understandable for the users of our output dataset.
-6.	The average of each measurement in our dataset grouped by each subject and activity.
+##Transformations
+1. The original datasets were separated into three datasets (subject, activity, and measurements) for both training and test.
+2. The subject, activity, and measurements were joined for training and test.
+3. The training and test datasets were joined.
+4. A subset of the resulting dataset is used to keep only the measurements on the mean and standard deviation for each measurement, so we have kept a new reduced dataset with this dimensions (10299 observations of 68 variables)
+5. The labels for activities and variables are extracted and used so that they are more understandable for the users of our output dataset.
+6. The average of each measurement in our dataset grouped by each subject and activity.
 
-Output variables
+##Output variables
 * subject_id: Integer value that identifies one subject on the original experiment
 * activity_id: Integer value that identifies each of the activities being studied on the experiment: 1: WALKING 2: WALKING_UPSTAIRS 3: WALKING_DOWNSTAIRS 4: SITTING 5: STANDING 6: LAYING
 * activity_label: The corresponding label for each activity id
