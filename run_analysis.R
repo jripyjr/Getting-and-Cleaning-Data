@@ -1,5 +1,5 @@
 # Check for libraries
-if (!"dplyr" %in% installed.packages()) {install.packages("dplyr")}
+if (!"dplyr" %in% installed.packages()) install.packages("dplyr")
 # Import libraries
 library(dplyr)
 
@@ -43,7 +43,7 @@ test_dataset <- cbind(subject_test,activity_test,measurements_test)
 # Finally combine both datasets (train and test) into one
 data <- rbind(train_dataset,test_dataset)
 
-# Perform the steps of the course project with the help of dplyr and his chain syntax
+# Perform the steps of the course project with the help of dplyr and chain syntax
 data %>%
       # Extract only the measurements on the mean and standard deviation for each measurement
       select(subject_id, activity_id, contains("mean\\(\\)"), contains("std\\(\\)")) %>%
