@@ -1,5 +1,5 @@
 # Check for libraries
-if (!"dplyr" %in% installed.packages()) install.packages("dplyr")
+if (!"dplyr" %in% installed.packages()) {install.packages("dplyr")}
 # Import libraries
 library(dplyr)
 
@@ -37,8 +37,7 @@ clean_measurements_labels <- gsub("BodyBody","Body",measurements_labels$label)
 names(measurements_test) <- clean_measurements_labels
 names(measurements_train) <- clean_measurements_labels
 
-# Now that we have the names assigned to the measurements 
-# we can safely combine the different parts of each dataset
+# Combine the different parts of each dataset
 train_dataset <- cbind(subject_train,activity_train,measurements_train)
 test_dataset <- cbind(subject_test,activity_test,measurements_test)
 # Finally combine both datasets (train and test) into one
